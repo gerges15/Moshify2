@@ -7,6 +7,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -169,52 +175,62 @@ a {
   align-items: center;
 }
 
-/* Buttons */
-div {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-}
 .btn {
-  align-items: center;
-  background-color: white;
-  border-radius: 30px;
-  border: 2px solid var(--color-heading);
-  color: var(--color-heading);
-  display: flex;
+  /* Mosh code */
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  height: 6rem;
-  justify-content: center;
-  letter-spacing: 1.5px;
-  padding: 2.4rem 0;
+  margin: 1rem 0;
+  padding: 2.4rem 3rem;
+  text-align: center;
   text-transform: uppercase;
-  width: 40rem;
+  white-space: nowrap;
 }
 .btn--primary {
-  background-color: var(--color-heading);
-  border: none;
-  color: var(--color-heading);
+  background-color: var(--color-primary);
   color: white;
+}
+
+.btn--primary:hover {
+  background-color: #3a8ffd;
 }
 .btn--secondary {
   background-color: var(--color-secondary);
-  border: none;
-  color: var(--color-heading);
   color: white;
-  height: 7rem;
-  letter-spacing: normal;
-  padding: 3rem 0;
-  width: 32rem;
 }
+
+.btn--secondary:hover {
+  background-color: #00c8eb;
+}
+
 .btn--accent {
   background-color: var(--color-accent);
-  border: none;
-  color: var(--color-heading);
   color: white;
-  letter-spacing: normal;
-  padding: 3rem 0;
+}
+.btn--accent:hover {
+  background-color: #ec3000;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background-color: white;
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+.btn--outline:hover {
+  color: white;
+  background-color: var(--color-heading);
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
 .btn--icon {
   width: auto;
