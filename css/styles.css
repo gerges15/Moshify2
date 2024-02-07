@@ -168,3 +168,69 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.btn {
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid var(--color-heading);
+  color: var(--color-heading);
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 6rem;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  padding: 2.4rem 0;
+  text-transform: uppercase;
+  width: 40rem;
+}
+.btn--primary {
+  background-color: var(--color-heading);
+  border: none;
+  color: var(--color-heading);
+  color: white;
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+  border: none;
+  color: var(--color-heading);
+  color: white;
+  height: 7rem;
+  letter-spacing: normal;
+  padding: 3rem 0;
+  width: 32rem;
+}
+.btn--accent {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-heading);
+  color: white;
+  letter-spacing: normal;
+  padding: 3rem 0;
+}
+.btn--icon {
+  width: auto;
+  height: auto;
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-heading);
+  color: white;
+  padding: 1.7rem 3.4rem;
+  padding-left: 3.2rem;
+  padding-right: 4.2rem;
+  font-size: 1.5rem;
+}
+.btn--icon .btn__icon-style {
+  margin: 0;
+  margin-right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
