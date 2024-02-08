@@ -250,3 +250,21 @@ a {
   width: 3rem;
   height: 3rem;
 }
+/* Inputs */
+.input {
+  border-radius: 30px;
+  border: 1px solid lightgray;
+  color: var(--color-heading);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+@media screen and (min-width: 1024) {
+  .input {
+    font-size: 5rem;
+  }
+}
