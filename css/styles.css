@@ -198,11 +198,11 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2.4rem 3rem;
+  outline: 0;
+  padding: 2.4rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  outline: 0;
 }
 .btn--primary {
   background-color: var(--color-primary);
@@ -238,13 +238,13 @@ a {
 }
 
 .btn--outline {
-  background-color: white;
-  color: var(--color-heading);
+  background-color: var(--color-heading);
+  color: #fff;
   border: 2px solid var(--color-heading);
 }
 .btn--outline:hover {
-  color: white;
-  background-color: var(--color-heading);
+  color: var(--color-heading);
+  background-color: #fff;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -321,11 +321,17 @@ a {
   background-color: var(--color-secondary);
   color: white;
 }
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
 
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 
 .plan__name {
   color: white;
@@ -348,11 +354,20 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
 }
+.plan--popular {
+  transform: scale(1.1);
+}
 
 .plan .list__item {
   margin-bottom: 2rem;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -708,4 +723,12 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+}
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0rem auto;
 }
